@@ -27,5 +27,7 @@ require('regenerator-runtime/runtime');
 https://p-school.tacoskingdom.com/blog/26
 
 上記のを参考に新規ボタンを作成し、scratch-vm/src/extensions/新しいボタン（例：scratch3_newblocks）下に今回のindex.jsを作成する
+9行目の  apiKey: 'sk-XXXXXXXXXXXXXXXXXXXXX',にapiKeyを入れる
+
 
 
