@@ -6,7 +6,7 @@ const log = require('../../util/log');
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
-  apiKey: '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',
+  apiKey: 'sk-XXXXXXXXXXXXXXXXXXXXX',
 });
 const openai = new OpenAIApi(configuration);
 
@@ -53,7 +53,9 @@ class Scratch3NewBlocks {
 	
 	async human(args){
 		let n = args.N
-		const completion = await openai.createChatCompletion({model: "gpt-3.5-turbo",messages: [{ role: "user", content: n }],});
+		const completion = await openai.createChatCompletion({model: "gpt-3.5-turbo",messages: [{ role: "user", content: n }]});
+		  // messages: [{ role: "user", content: "ChatGPT について教えて" }],
+
 		//console.log(completion.data.choices[0].message.content)
 		return completion.data.choices[0].message.content
 		
@@ -86,3 +88,7 @@ class Scratch3NewBlocks {
 }
 
 module.exports = Scratch3NewBlocks;
+
+
+
+
